@@ -1,10 +1,8 @@
-# Boas-vindas ao repositório do projeto `Restaurant Orders`!
-
-# Seja bem vindo ao projeto Trybers and Dragons!
+# Seja bem vindo ao projeto `Restaurant Orders`!
 
 ## Stack utilizada
 
-**Back-end:** Typescript, NodeJs e Arquitetura SOLID
+**Back-end:** Python
 
 <details>
   <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary>
