@@ -75,6 +75,30 @@ def day_never_visited(data, name):
     return days_not_visited
 
 
+def day_more_visited(data):
+    days = dict()
+
+    for order in data:
+        if order[2] not in days:
+            days[order[2]] = 1
+        else:
+            days[order[2]] += 1
+
+    return max(days, key=days.get)
+
+
+def day_less_visited(data):
+    days = dict()
+
+    for order in data:
+        if order[2] not in days:
+            days[order[2]] = 1
+        else:
+            days[order[2]] += 1
+
+    return min(days, key=days.get)
+
+
 def analyze_log(path_to_file):
     data_file = get_csv(path_to_file)
     new_data = [
