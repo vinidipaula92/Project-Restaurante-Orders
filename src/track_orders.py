@@ -2,7 +2,6 @@ from src.analyze_log import (
     most_ordered_food,
     never_ordered_food,
     day_never_visited,
-    day_never_visited,
     day_more_visited,
     day_less_visited,
 )
