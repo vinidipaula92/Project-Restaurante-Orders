@@ -25,7 +25,10 @@ class InventoryControl:
             self.inventory[ingredient] -= 1
 
     def get_quantities_to_buy(self):
-        return {k: max(0, self.MINIMUM_INVENTORY[k] - self.inventory[k]) for k in self.inventory}
+        return {k: max(0, self
+                       .MINIMUM_INVENTORY[k] - self
+                       .inventory[k]) for k in self.inventory}
 
     def get_available_dishes(self):
-        return {k for k, v in self.INGREDIENTS.items() if all(self.inventory[i] > 0 for i in v)}
+        return {k for k, v in self
+                .INGREDIENTS.items() if all(self.inventory[i] > 0 for i in v)}
